@@ -1,14 +1,25 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 
 export const Navbar = ({ name, option1, option2 }) => {
+  const router = useRouter();
   const [scroll, setScroll] = useState(false);
+  const [page, setPage] = useState("Home");
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
       setScroll(window.scrollY > 600);
     });
   }, [scroll]);
+
+  useEffect(() => {
+    router.pathname === "/works"
+      ? setPage(() => "Works")
+      : router.pathname === "/about"
+      ? setPage(() => "About")
+      : setPage(() => "Home");
+  }, [router.pathname]);
 
   return (
     <nav>
@@ -25,13 +36,17 @@ export const Navbar = ({ name, option1, option2 }) => {
             </h1>
           </a>
         </Link>
-        <div className="flex space-x-8 text-[#111010] font-semibold text-[14px] ">
-          <Link href="/other" passHref>
+        <div className="flex space-x-8 items-center text-[#111010] font-semibold text-[14px] ">
+          <Link href="/works" passHref>
             <a>
-              <p>{option1}</p>
+              <p className={`${page === "Works" ? "text-[#73abff] bg-[#e3efff] px-2 py-1" : ""} `}>{option1}</p>
             </a>
           </Link>
-          <p>{option2}</p>
+          <Link href="/about" passHref>
+            <a>
+              <p className={`${page === "About" ? "text-[#DC6039] bg-[#FDE1D9] px-2 py-1" : ""} `} >{option2}</p>
+            </a>
+          </Link>
         </div>
       </div>
     </nav>

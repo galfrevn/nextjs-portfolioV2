@@ -20,7 +20,7 @@ const customAnimation = keyframes`
 
 export const ProjectCard = (project) => {
   return (
-    <Reveal keyframes={customAnimation} delay={200} duration={500} cascade={2} >
+    <Reveal keyframes={customAnimation} delay={300} duration={300} cascade={2} >
       <Link href={project.slug} >
         <div className="card w-full bg-white rounded-sm duration-300 transition-all overflow-hidden group hover:-translate-y-2 shadow-xl" >
           <Image
