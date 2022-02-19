@@ -2,13 +2,14 @@ import { Navbar } from "../components/Navbar";
 import "../styles/globals.css";
 import { motion, AnimatePresence } from "framer-motion";
 import NextNProgress from "nextjs-progressbar";
+import { BottomOverlay } from "../components/BottomOverlay";
 
 function MyApp({ Component, pageProps, router }) {
   return (
     <>
       <NextNProgress
-        height={2}
-        color="#3B82F6"
+        height={4}
+        color="#5393fe"
         options={{ showSpinner: false }}
       />
       <div className="bg-white">
@@ -21,7 +22,7 @@ function MyApp({ Component, pageProps, router }) {
             variants={{
               pageInitial: {
                 opacity: 0,
-                x: -10,
+                x: -40,
               },
               pageAnimate: {
                 opacity: 1,
@@ -32,6 +33,7 @@ function MyApp({ Component, pageProps, router }) {
             <Component {...pageProps} />
           </motion.div>
         </AnimatePresence>
+        <BottomOverlay />
       </div>
     </>
   );
