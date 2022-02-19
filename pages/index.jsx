@@ -14,11 +14,13 @@ export default function Home() {
       </Head>
 
       
-      <div className='p-8' >
+      <div className='p-6' >
         <h1 className='text-3xl font-bold bg-slate-300 text-white' >Change me!</h1>
         <p>Template by Valentin Galfre</p>
       </div>
 
+
+      
 
 
     </div>
