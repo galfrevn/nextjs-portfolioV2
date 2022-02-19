@@ -48,45 +48,7 @@ const projects = [
     img: "https://images.prismic.io/galfrevn-portfolio/74c57ea7-404a-4965-80ac-2e4e6d04a7f9_google+clone.jpg?auto=compress,format",
     slug: "b",
   },
-  {
-    tag: "Backend",
-    title: "REST Full API",
-    description: (
-      <>
-        <p>VNBlog is a Simple blog Application</p>
-        <strong>Simple blog Application</strong>
-        <p>made with NextJS, Tailwind CSS and GraphCMS as Content Manager.📰</p>
-      </>
-    ),
-    img: "https://images.prismic.io/galfrevn-portfolio/41befac3-830b-4c3d-b407-da8adb2410eb_e1.jpg?auto=compress,format",
-    slug: "b",
-  },
-  {
-    tag: "Backend",
-    title: "REST Full API",
-    description: (
-      <>
-        <p>VNBlog is a Simple blog Application</p>
-        <strong>Simple blog Application</strong>
-        <p>made with NextJS, Tailwind CSS and GraphCMS as Content Manager.📰</p>
-      </>
-    ),
-    img: "https://images.prismic.io/galfrevn-portfolio/41befac3-830b-4c3d-b407-da8adb2410eb_e1.jpg?auto=compress,format",
-    slug: "b",
-  },
-  {
-    tag: "Backend",
-    title: "REST Full API",
-    description: (
-      <>
-        <p>VNBlog is a Simple blog Application</p>
-        <strong>Simple blog Application</strong>
-        <p>made with NextJS, Tailwind CSS and GraphCMS as Content Manager.📰</p>
-      </>
-    ),
-    img: "https://images.prismic.io/galfrevn-portfolio/41befac3-830b-4c3d-b407-da8adb2410eb_e1.jpg?auto=compress,format",
-    slug: "b",
-  },
+  
 ];
 
 export default function Home() {
