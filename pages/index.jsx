@@ -59,7 +59,7 @@ export default function Home() {
           name="description"
           content="Galfré Valentín portfolio | Homepage"
         />
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/logo.ico" />
         <meta name="theme-color" content="#FFF" />
       </Head>
 

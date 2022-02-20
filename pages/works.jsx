@@ -56,7 +56,7 @@ export default function works() {
       <Head>
         <title>Work | Galfré Valentín Portfolio </title>
         <meta name="description" content="Galfré Valentín portfolio | Work" />
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/logo.ico" />
         <meta name="theme-color" content="#FFF" />
       </Head>
 
