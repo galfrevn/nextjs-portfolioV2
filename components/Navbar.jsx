@@ -32,7 +32,7 @@ export const Navbar = ({ name, option1, option2 }) => {
         className={`
           ${
             scroll ? "top-0 fixed z-20 bg-[rgba(255,255,255,.98)]" : "fixed top-10 bg-transparent"
-          } h-14 flex items-center justify-between w-full px-7  transition-all duration-300 `}
+          } h-14 flex items-center justify-between w-full px-7 md:max-w-6xl md:mx-auto md:relative transition-all duration-300 `}
       >
         <Link href="/" passHref>
           <a>

@@ -3,8 +3,8 @@ import { BsLinkedin } from "react-icons/bs";
 
 export const Footer = () => {
   return (
-    <div className="relative text-[#111010]">
-      <div className="pl-8 pr-32 pb-20 ">
+    <div className="relative md:max-w-6xl md:mx-auto text-[#111010]">
+      <div className="pl-6 pr-32 pb-20 ">
         <h1 className="font-extrabold text-xl mb-4">
           Now that you know me better, let&apos;s work together!
         </h1>
@@ -21,7 +21,7 @@ export const Footer = () => {
         <div className="bg-[#17B1B1] w-16 h-10 "></div>
       </div>
 
-      <div className="absolute left-8 bottom-4 ">
+      <div className="absolute left-6 bottom-4 ">
         <a
           href="https://linkedin.com/in/galfrevn"
           target="_blank"

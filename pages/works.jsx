@@ -2,53 +2,7 @@ import Head from "next/head";
 import React from "react";
 import { Footer } from "../components/Footer";
 import { ProjectCard } from "../components/ProjectCard";
-
-const projects = [
-  {
-    tag: "Frontend",
-    title: "(VNBlog) NextJS, TailwindCSS & GraphCMS Blog",
-    description: (
-      <>
-        <p>VNBlog is a Simple blog Application</p>
-        <strong>Simple blog Application</strong>
-        <p>made with NextJS, Tailwind CSS and GraphCMS as Content Manager.📰</p>
-      </>
-    ),
-    img: "/mercado.jpg",
-    slug: "a",
-  },
-  {
-    tag: "Fullstack",
-    title: "(Magasin) Vanilla JavaScript Ecommerce Website",
-    description: (
-      <>
-        <p>
-          Magasin is a Fullstack <strong>Ecommerce</strong>, made for a school
-          project with <strong>Vanilla</strong>JavaScript, NodeJS, Express &
-          MongoDB
-        </p>
-      </>
-    ),
-    img: "/crombie.jpg",
-    slug: "b",
-  },
-  {
-    tag: "Frontend",
-    title: "(VNSearch) React Google Search Clone",
-    description: (
-      <>
-        <p>
-          VNSearch is a Google Search Clone made with{" "}
-          <strong>ReactJS, Tailwind CSS</strong> and a <strong>RapidAPI</strong>
-        </p>
-
-        <p> Google Search Clone 🔎</p>
-      </>
-    ),
-    img: "/2d.jpg",
-    slug: "b",
-  },
-];
+import projects from '../components/data'
 
 export default function works() {
   return (
@@ -65,7 +19,7 @@ export default function works() {
           My works
         </h1>
         <p className="text-[#777] text-xs ">
-          Take a look to some of my personal projects!
+          Take a look to some of my personal projects 📚!
         </p>
 
         <div className="mt-12 mb-20">

@@ -21,20 +21,21 @@ const customAnimation = keyframes`
 export const ProjectCard = (project) => {
   return (
     <Reveal keyframes={customAnimation} triggerOnce={true} delay={300} duration={300} cascade={2} >
-      <Link href={project.slug} >
-        <div className="card w-full bg-white h-full rounded-sm duration-300 transition-all overflow-hidden group hover:-translate-y-2 border-b-[.5px]  " >
+      <Link href={`${project.slug}?title=${project.title}`} as={project.slug} >
+        <div className="card w-full bg-white h-full duration-300 transition-all overflow-hidden group hover:-translate-y-2 border-b-[.5px]  " >
           <Image
             layout="responsive"
             width="100%"
-            height={74}
+            height={58}
             objectFit="cover"
             src={project.img}
             alt={project.title}
             quality={100}
             placeholder="blur"
             blurDataURL={project.img}
+            className="rounded-md"
           />
-          <div className="py-10">
+          <div className="pb-10 pt-6">
             
             <span className={ ` ${project.tag === "Fullstack" ?  "bg-[#ffefea] text-[#f19e82]" : "bg-[#ecf4ff] text-[#5393fe] " } text-xs font-semibold rounded-md px-2 py-1 `  }  >
               {project.tag}
@@ -45,7 +46,7 @@ export const ProjectCard = (project) => {
             <div className="text-sm text-[#111010] leading-6">
               {project.description}
             </div>
-            <Link href={project.slug} passHref>
+            <Link href={`${project.slug}?title=${project.title}`} as={project.slug} passHref>
               <a className="group">
                 <div className="flex items-center mt-6 ">
                   <p className="text-[#111010] text-xs font-bold">
