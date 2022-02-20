@@ -26,9 +26,10 @@ export const ProjectCard = (project) => {
           <Image
             layout="responsive"
             width="100%"
-            height={68}
+            height={61}
             src={project.img}
-            alt=""
+            alt={project.title}
+            quality={100}
             placeholder="blur"
             blurDataURL={project.img}
           />

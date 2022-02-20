@@ -9,7 +9,12 @@ export const Navbar = ({ name, option1, option2 }) => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 600);
+      if (window.scrollY > 50) {
+        setScroll(() => true);
+      } else {
+        setScroll(() => false);
+      }
+      
     });
   }, [scroll]);
 
@@ -26,8 +31,8 @@ export const Navbar = ({ name, option1, option2 }) => {
       <div
         className={`
           ${
-            scroll ? "fixed z-20 top-0" : "absolute mt-10 top-0 bg-transparent"
-          } h-14 flex items-center justify-between w-full px-7 bg-[rgba(255,255,255,.98)] transition-all duration-300 `}
+            scroll ? "top-0 fixed z-20 bg-[rgba(255,255,255,.98)]" : "fixed top-10 bg-transparent"
+          } h-14 flex items-center justify-between w-full px-7  transition-all duration-300 `}
       >
         <Link href="/" passHref>
           <a>
@@ -39,12 +44,28 @@ export const Navbar = ({ name, option1, option2 }) => {
         <div className="flex space-x-8 items-center text-[#111010] font-semibold text-[14px] ">
           <Link href="/works" passHref>
             <a>
-              <p className={`${page === "Works" ? "text-[#73abff] bg-[#e3efff] px-2 py-1" : ""} `}>{option1}</p>
+              <p
+                className={`${
+                  page === "Works"
+                    ? "text-[#73abff] bg-[#e3efff] px-2 py-1"
+                    : ""
+                } `}
+              >
+                {option1}
+              </p>
             </a>
           </Link>
           <Link href="/about" passHref>
             <a>
-              <p className={`${page === "About" ? "text-[#DC6039] bg-[#FDE1D9] px-2 py-1" : ""} `} >{option2}</p>
+              <p
+                className={`${
+                  page === "About"
+                    ? "text-[#DC6039] bg-[#FDE1D9] px-2 py-1"
+                    : ""
+                } `}
+              >
+                {option2}
+              </p>
             </a>
           </Link>
         </div>

@@ -48,7 +48,6 @@ const projects = [
     img: "https://images.prismic.io/galfrevn-portfolio/74c57ea7-404a-4965-80ac-2e4e6d04a7f9_google+clone.jpg?auto=compress,format",
     slug: "b",
   },
-  
 ];
 
 export default function Home() {
@@ -92,7 +91,7 @@ export default function Home() {
           <h3 className="text-[14px] font-semibold text-white ">Contact me</h3>
         </button>
 
-        <div className="my-20">
+        <div className="mt-24 mb-20">
           <h1 className="text-[#111010] text-xl font-bold">
             See some of my projects
           </h1>

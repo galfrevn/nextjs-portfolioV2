@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps, router }) {
         color="#5393fe"
         options={{ showSpinner: false }}
       />
-      <div className="bg-white">
+      <div className="bg-white overflow-x-hidden">
         <Navbar name="Galfre.vn" option1="Works" option2="About" />
         <AnimatePresence>
           <motion.div
