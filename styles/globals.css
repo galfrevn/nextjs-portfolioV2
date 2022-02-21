@@ -18,3 +18,7 @@ a {
   font-family: "Poppins", sans-serif;
   -webkit-tap-highlight-color: transparent;
 }
+
+.swiper-pagination-bullet-active {
+  background-color: rgba(0, 0, 0, .4) !important;
+}

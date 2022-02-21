@@ -1,25 +1,57 @@
 /* eslint-disable @next/next/no-img-element */
-/* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useState } from "react";
-import { useRouter } from "next/router";
+import React from "react";
 import Head from "next/head";
 import { Footer } from "../../components/Footer";
-import projects from "../../components/data";
 import { BsArrowRightShort } from "react-icons/bs";
 import Link from "next/link";
 import Image from "next/image";
+
+// Swiper Slider
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Mousewheel, Autoplay } from "swiper";
+import "swiper/css";
+
+const images = [
+  {
+    src: "/study/crombie/a.jpg",
+  },
+  {
+    src: "/study/crombie/b.jpg",
+  },
+  {
+    src: "/study/crombie/c.jpg",
+  },
+  {
+    src: "/study/crombie/d.jpg",
+  },
+  {
+    src: "/study/crombie/e.jpg",
+  },
+  {
+    src: "/study/crombie/f.jpg",
+  },
+  {
+    src: "/study/crombie/g.jpg",
+  },
+  {
+    src: "/study/crombie/h.jpg",
+  },
+  {
+    src: "/study/crombie/i.jpg",
+  },
+];
 
 function ProjectPage() {
   return (
     <>
       <Head>
-        <title> | Galfré Valentín Portfolio </title>
+        <title> Case study (Crombie) | Galfré Valentín Portfolio </title>
         <meta name="description" content={`Galfré Valentín portfolio | `} />
         <link rel="icon" href="/logo.ico" />
         <meta name="theme-color" content="#FFF" />
       </Head>
 
-      <div className="md:max-w-6xl md:mx-auto mt-36 p-6">
+      <div className="md:max-w-6xl md:mx-auto mt-36 px-6 pt-6">
         <h1 className="text-[#111010] text-[20px] font-bold leading-[1.45] ">
           Crombie Webpage UI Clone
         </h1>
@@ -28,7 +60,7 @@ function ProjectPage() {
           Take a look and discover how it works 🧪.
         </p>
 
-        <div className="mt-12 mb-20">
+        <div className="my-12">
           <p className="text-[13px] ">
             This is a short description of this item.
           </p>
@@ -86,7 +118,35 @@ function ProjectPage() {
           </p>
         </div>
 
-        <p>here goes a slider</p>
+        <h1 className="text-[#111010] text-[20px] font-bold leading-[1.45] ">
+          Galery
+        </h1>
+        <p className="text-[#777] text-xs mb-5">Take a better look.</p>
+        <Swiper
+          slidesPerView={2}
+          spaceBetween={30}
+          mousewheel={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          modules={[Autoplay, Mousewheel]}
+        >
+          {images.map((img, index) => (
+            <SwiperSlide key={index}>
+              <div className="w-full relative h-80">
+                <Image
+                  src={img.src}
+                  alt={`Slide ${index}`}
+                  layout="fill"
+                  placeholder="blur"
+                  blurDataURL={img.src}
+                  className="rounded-xl"
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
 
       <div className="flex mt-6 px-6 items-center ">
