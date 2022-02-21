@@ -1,8 +1,8 @@
 import Head from "next/head";
-import { BsLinkedin } from "react-icons/bs";
 import { ProjectCard } from "../components/ProjectCard";
 import { Footer } from "../components/Footer";
-import projects from '../components/data'
+import projects from "../components/data";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -40,10 +40,13 @@ export default function Home() {
           </span>
           . <br /> Frontend Developer 💻
         </h1>
-        <button className="mt-7 py-3.5 px-5 flex bg-[#5393fe] transition-all duration-300 hover:bg-[#9ec5ff] space-x-2 ">
-          <BsLinkedin className="mt-0.5 text-white" />
-          <h3 className="text-[14px] font-semibold text-white ">Contact me</h3>
-        </button>
+        <Link href="/contact" passHref>
+          <button className="mt-7 py-3.5 px-8 flex bg-[#5393fe] transition-all duration-300 hover:bg-[#9ec5ff] space-x-2 ">
+            <h3 className="text-[14px] font-semibold text-white ">
+              Contact me
+            </h3>
+          </button>
+        </Link>
 
         <div className="mt-24 mb-20">
           <h1 className="text-[#111010] text-xl font-bold">
