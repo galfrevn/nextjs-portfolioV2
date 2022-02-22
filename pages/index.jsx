@@ -17,25 +17,25 @@ export default function Home() {
         <meta name="theme-color" content="#FFF" />
       </Head>
 
-      <div className="md:max-w-6xl md:mx-auto mt-36 p-6">
-        <h1 className="text-[#111010] md:text-6xl text-[28px] font-bold md:leading-[1.45] leading-[1.45] ">
+      <div className="md:max-w-6xl md:mx-auto mt-36 md:mt-28 p-6">
+        <h1 className="text-[#111010] cursor-default md:text-6xl text-[28px] font-bold md:leading-[1.45] leading-[1.45] ">
           Welcome to{" "}
-          <span className="text-[#5393fe] hover:bg-[#ecf4ff] transition-all duration-300">
+          <span className="text-[#5393fe] cursor-pointer hover:bg-[#ecf4ff] transition-all duration-300">
             Valentin&apos;s Galfré
           </span>{" "}
-          <span className="text-[#f19e82] hover:bg-[#ffefea] transition-all duration-300">
+          <span className="text-[#f19e82] cursor-pointer hover:bg-[#ffefea] transition-all duration-300">
             portfolio
           </span>
           . If you want to{" "}
-          <span className="text-[#B57BFF] hover:bg-[#f3ebff] transition-all duration-300 ">
+          <span className="text-[#B57BFF] cursor-pointer hover:bg-[#f3ebff] transition-all duration-300 ">
             know{" "}
           </span>{" "}
           me{" "}
-          <span className="text-[#97cc8d] hover:bg-[#edfceb] transition-all duration-300 ">
+          <span className="text-[#97cc8d] cursor-pointer hover:bg-[#edfceb] transition-all duration-300 ">
             better
           </span>
           , this is the{" "}
-          <span className="text-[#17B1B1] hover:bg-[#e1f8f8] transition-all duration-300 ">
+          <span className="text-[#17B1B1] cursor-pointer hover:bg-[#e1f8f8] transition-all duration-300 ">
             correct place
           </span>
           . <br /> Frontend Developer 💻
@@ -48,10 +48,13 @@ export default function Home() {
           </button>
         </Link>
 
-        <div className="mt-24 mb-20">
-          <h1 className="text-[#111010] text-xl font-bold">
-            See some of my best projects
+        <div className="mt-24 mb-20 md:mb-40">
+          <h1 className="text-[#111010] md:text-3xl text-xl font-bold">
+            Discover some of my best projects
           </h1>
+          <p className="text-[#777] text-xs md:text-[16px] md:mt-2 ">
+            Take a look to some of my personal projects 📚!
+          </p>
 
           <div className="mt-12">
             <div className="space-y-12">
@@ -62,7 +65,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer className="pb-4 ">
+      <footer className="pb-10 ">
         <Footer />
       </footer>
     </div>

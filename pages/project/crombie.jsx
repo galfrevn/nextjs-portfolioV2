@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Head from "next/head";
-import { Footer } from "../../components/Footer";
 import { BsArrowLeftShort } from "react-icons/bs";
 import Link from "next/link";
 import Image from "next/image";
+import { Footer } from '../../components/Footer'
 import {
   SiNextdotjs,
   SiReact,
@@ -223,16 +223,16 @@ function ProjectPage() {
           <a
             target="_blank"
             rel="noreferrer"
-            className="text-[12px] bg-[#ecf4ff] font-semibold transitiona-all duration-300 text-[#5393fe]  py-3 px-6 "
+            className="text-[12px] bg-[#f36] font-semibold transitiona-all duration-300 text-white py-3 px-6 "
           >
             Live demo
           </a>
         </Link>
       </div>
 
-      <footer className="pt-20 pb-4 ">
+      <div className="pt-20 pb-4 ">
         <Footer />
-      </footer>
+      </div>
     </>
   );
 }

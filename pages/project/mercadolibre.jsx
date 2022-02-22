@@ -227,7 +227,7 @@ function ProjectPage() {
           <a
             target="_blank"
             rel="noreferrer"
-            className="text-[12px] bg-[#ffffec] font-semibold transitiona-all duration-300 text-[#fed653]  py-3 px-6 "
+            className="text-[12px] bg-[#fed653] font-semibold transitiona-all duration-300 text-[#fffff8]  py-3 px-6 "
           >
             Live demo
           </a>

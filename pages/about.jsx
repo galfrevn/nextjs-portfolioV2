@@ -53,11 +53,11 @@ export default function about() {
         <meta name="theme-color" content="#FFF" />
       </Head>
 
-      <div className="md:max-w-2xl md:mx-auto mt-36 p-6">
-        <h1 className="text-[#111010] text-[28px] font-bold leading-[1.45] ">
+      <div className="md:max-w-6xl md:mx-auto mt-36 p-6">
+        <h1 className="text-[#111010] text-[28px] md:text-5xl font-bold leading-[1.45] ">
           About Me
         </h1>
-        <p className="text-[#777] text-xs ">
+        <p className="text-[#777] text-xs md:text-[16px] md:mt-2 ">
           Discover my strengths, hobbies and other stuffs 🔨.
         </p>
 
