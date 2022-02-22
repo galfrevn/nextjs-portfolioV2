@@ -14,7 +14,6 @@ export const Navbar = ({ name, option1, option2 }) => {
       } else {
         setScroll(() => false);
       }
-      
     });
   }, [scroll]);
 
@@ -31,17 +30,17 @@ export const Navbar = ({ name, option1, option2 }) => {
       <div
         className={`
           ${
-            scroll ? "top-0 fixed z-20 bg-[rgba(255,255,255,.98)]" : "fixed top-10 bg-transparent"
-          } h-14 flex items-center justify-between w-full px-7 md:max-w-6xl md:mx-auto md:relative transition-all duration-300 `}
+            scroll ? "top-0 fixed z-20 bg-[rgba(255,255,255,.92)]" : "fixed top-10 bg-transparent"
+          } h-14 flex items-center justify-between w-full px-7 md:max-w-6xl md:mx-auto md:relative transition-all backdrop-blur-sm duration-300 `}
       >
         <Link href="/" passHref>
           <a>
-            <h1 className="font-semibold text-[14px] text-[#5393fe] ">
+            <h1 className="font-semibold md:text-xl text-[14px] text-[#5393fe] ">
               {name}
             </h1>
           </a>
         </Link>
-        <div className="flex space-x-8 items-center text-[#111010] font-semibold text-[14px] ">
+        <div className="flex space-x-8 items-center text-[#111010] font-semibold md:text-xl text-[14px] ">
           <Link href="/works" passHref>
             <a>
               <p

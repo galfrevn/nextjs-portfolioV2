@@ -21,7 +21,7 @@ export const Footer = () => {
         <div className="bg-[#17B1B1] w-16 h-10 "></div>
       </div>
 
-      <div className="absolute left-6 bottom-4 ">
+      <div className="absolute left-6 bottom-1 ">
         <a
           href="https://linkedin.com/in/galfrevn"
           target="_blank"

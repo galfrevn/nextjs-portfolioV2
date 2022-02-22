@@ -18,32 +18,36 @@ import "swiper/css";
 
 const images = [
   {
-    src: "/study/crombie/a.jpg",
+    src: "/study/meli/a.jpg",
   },
   {
-    src: "/study/crombie/b.jpg",
+    src: "/study/meli/b.jpg",
   },
   {
-    src: "/study/crombie/c.jpg",
+    src: "/study/meli/c.jpg",
   },
   {
-    src: "/study/crombie/d.jpg",
+    src: "/study/meli/d.jpg",
   },
   {
-    src: "/study/crombie/e.jpg",
+    src: "/study/meli/e.jpg",
   },
   {
-    src: "/study/crombie/f.jpg",
+    src: "/study/meli/f.jpg",
   },
   {
-    src: "/study/crombie/g.jpg",
+    src: "/study/meli/g.jpg",
   },
   {
-    src: "/study/crombie/h.jpg",
+    src: "/study/meli/h.jpg",
   },
   {
-    src: "/study/crombie/i.jpg",
+    src: "/study/meli/i.jpg",
   },
+  {
+    src: "/study/meli/j.jpg",
+  },
+  
 ];
 
 const features = [
@@ -98,7 +102,7 @@ function ProjectPage() {
         </Link>
 
         <h1 className="text-[#111010] text-[20px] font-bold leading-[1.45] ">
-          Crombie Webpage UI Clone
+          Mercadolibre UI Clone
         </h1>
         <p className="text-[#777] mt-2 text-xs ">Galfré Valentín - ©2022</p>
         <p className="text-[#777] text-xs ">
@@ -112,11 +116,11 @@ function ProjectPage() {
               width="100%"
               height={58}
               objectFit="cover"
-              src="/study/test.jpg"
+              src="/study/meli.jpg"
               alt="Crombie "
               quality={100}
               placeholder="blur"
-              blurDataURL="/study/test.jpg"
+              blurDataURL="/study/meli.jpg"
               className="rounded-md"
             />
           </div>
@@ -151,7 +155,7 @@ function ProjectPage() {
                         {feature.name}
                       </p>
                     </dt>
-                    <dd className="mt-2 ml-16 text-xs text-gray-500">
+                    <dd className="mt-2 ml-16 text-xs leading-5 text-gray-500">
                       {feature.description}
                     </dd>
                   </div>
@@ -195,7 +199,7 @@ function ProjectPage() {
                   layout="fill"
                   placeholder="blur"
                   blurDataURL={img.src}
-                  className="rounded-xl"
+                  className="rounded-xl "
                 />
               </div>
             </SwiperSlide>
@@ -208,7 +212,7 @@ function ProjectPage() {
       </p>
       <div className="flex px-6 space-x-4 items-center ">
         <Link
-          href={"https://github.com/galfrevn/nextjs-crombie-clone"}
+          href={"https://github.com/galfrevn/nextjs-mercadolibre"}
           passHref
         >
           <a
@@ -219,11 +223,11 @@ function ProjectPage() {
             Github repo
           </a>
         </Link>
-        <Link href={"https://vncrombie.netlify.app"} passHref>
+        <Link href={"https://vnmeli.netlify.app"} passHref>
           <a
             target="_blank"
             rel="noreferrer"
-            className="text-[12px] bg-[#ecf4ff] font-semibold transitiona-all duration-300 text-[#5393fe]  py-3 px-6 "
+            className="text-[12px] bg-[#ffffec] font-semibold transitiona-all duration-300 text-[#fed653]  py-3 px-6 "
           >
             Live demo
           </a>
