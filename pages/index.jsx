@@ -50,9 +50,9 @@ export default function Home() {
 
         <div className="mt-24 mb-20 md:mb-40">
           <h1 className="text-[#111010] md:text-3xl text-xl font-bold">
-            Discover some of my best projects
+            Selected projects
           </h1>
-          <p className="text-[#777] text-xs md:text-[16px] md:mt-2 ">
+          <p className="text-[#777] text-xs md:text-[16px] md:mt-2 mt-1">
             Take a look to some of my personal projects 📚!
           </p>
 

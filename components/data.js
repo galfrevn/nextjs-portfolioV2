@@ -1,7 +1,7 @@
 const projects = [
   {
     tag: "Frontend",
-    title: "Crombie NextJS, TailwindCSS & GraphCMS Blog",
+    title: "Crombie NextJS + TailwindCSS Website UI Clone",
     description: (
       <>
         <p>VNBlog is a Simple blog Application</p>
@@ -13,8 +13,8 @@ const projects = [
     slug: "/project/crombie",
   },
   {
-    tag: "Fullstack",
-    title: "Meli Vanilla JavaScript Ecommerce Website",
+    tag: "Frontend",
+    title: "Mercadolibre NextJS + TailwindCSS Responsive UI Clone",
     description: (
       <>
         <p>
@@ -29,7 +29,7 @@ const projects = [
   },
   {
     tag: "Frontend",
-    title: "Google search React Google Search Clone",
+    title: "React Responsive Google Search Clone",
     description: (
       <>
         <p>
@@ -45,7 +45,7 @@ const projects = [
   },
   {
     tag: "Frontend",
-    title: "Instagram React Google Search Clone",
+    title: "Instagram NextJS + TailwindCSS Responsive UI Clone",
     description: (
       <>
         <p>
@@ -61,7 +61,7 @@ const projects = [
   },
   {
     tag: "Fullstack",
-    title: "(VNSearch) React Google Search Clone",
+    title: "Magasin | Vanilla JavaScript Fullstack Ecommerce",
     description: (
       <>
         <p>

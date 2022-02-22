@@ -1,14 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Head from "next/head";
+import { Footer } from "../../components/Footer";
 import { BsArrowLeftShort } from "react-icons/bs";
 import Link from "next/link";
 import Image from "next/image";
-import { Footer } from '../../components/Footer'
 import {
-  SiNextdotjs,
-  SiReact,
-  SiTailwindcss,
+  SiBootstrap,
+  SiExpress,
+  SiJavascript,
+  SiMongodb,
+  SiNodedotjs,
 } from "react-icons/si";
 
 // Swiper Slider
@@ -18,56 +20,78 @@ import "swiper/css";
 
 const images = [
   {
-    src: "/study/crombie/a.jpg",
+    src: "/study/magasin/a.jpg",
   },
   {
-    src: "/study/crombie/b.jpg",
+    src: "/study/magasin/b.jpg",
   },
   {
-    src: "/study/crombie/c.jpg",
+    src: "/study/magasin/c.jpg",
   },
   {
-    src: "/study/crombie/d.jpg",
+    src: "/study/magasin/d.jpg",
   },
   {
-    src: "/study/crombie/e.jpg",
+    src: "/study/magasin/e.jpg",
   },
   {
-    src: "/study/crombie/f.jpg",
+    src: "/study/magasin/f.jpg",
   },
   {
-    src: "/study/crombie/g.jpg",
+    src: "/study/magasin/g.jpg",
   },
   {
-    src: "/study/crombie/h.jpg",
+    src: "/study/magasin/h.jpg",
   },
   {
-    src: "/study/crombie/i.jpg",
+    src: "/study/magasin/i.jpg",
+  },
+  {
+    src: "/study/magasin/j.jpg",
+  },
+  {
+    src: "/study/magasin/k.jpg",
   },
 ];
 
 const features = [
   {
-    name: "React",
+    name: "Vanilla JavaScript",
     description:
       "Is a library for building composable user interfaces. It encourages the creation of reusable UI components, which present data that changes over time.",
-    icon: SiReact,
-    bg: "bg-[#ecf4ff]",
-    text: "text-[#5393fe]",
+    icon: SiJavascript,
+    bg: "bg-[#fffae0]",
+    text: "text-[#e6cf6c]",
   },
   {
-    name: "Next.JS",
+    name: "Bootstrap",
     description:
       "Is a React Based framework with server side rendering capability. It is very fast and SEO friendly. Has an automatic routing and gives a lot of features",
-    icon: SiNextdotjs,
-    bg: "bg-[#ffefea]",
-    text: "text-[#f19e82]",
+    icon: SiBootstrap,
+    bg: "bg-[#f3ebff]",
+    text: "text-[#B57BFF]",
   },
   {
-    name: "TailwindCSS",
+    name: "NodeJS",
     description:
       "Is a library for building composable user interfaces. It encourages the creation of reusable UI components, which present data that changes over time.",
-    icon: SiTailwindcss,
+    icon: SiNodedotjs,
+    bg: "bg-[#edfceb]",
+    text: "text-[#97cc8d]",
+  },
+  {
+    name: "ExpressJS",
+    description:
+      "Is a library for building composable user interfaces. It encourages the creation of reusable UI components, which present data that changes over time.",
+    icon: SiExpress,
+    bg: "bg-[#EEE]",
+    text: "text-black",
+  },
+  {
+    name: "MongoDB - Mongoose",
+    description:
+      "Is a library for building composable user interfaces. It encourages the creation of reusable UI components, which present data that changes over time.",
+    icon: SiMongodb,
     bg: "bg-[#e1f8f8]",
     text: "text-[#17B1B1]",
   },
@@ -77,8 +101,8 @@ function ProjectPage() {
   return (
     <>
       <Head>
-        <title> Case study (Crombie) | Galfré Valentín Portfolio </title>
-        <meta name="description" content={`Galfré Valentín portfolio | `} />
+        <title> Case study (Magasin) | Galfré Valentín Portfolio </title>
+        <meta name="description" content={`Galfré Valentín portfolio | Magasin`} />
         <link rel="icon" href="/logo.ico" />
         <meta name="theme-color" content="#FFF" />
       </Head>
@@ -98,7 +122,7 @@ function ProjectPage() {
         </Link>
 
         <h1 className="text-[#111010] text-[20px] font-bold leading-[1.45] ">
-          Crombie NextJS + TailwindCSS Webpage UI Clone
+          Magasin | Vanilla JavaScript Fullstack Ecommerce
         </h1>
         <p className="text-[#777] mt-2 text-xs ">Galfré Valentín - ©2022</p>
         <p className="text-[#777] text-xs ">
@@ -112,11 +136,11 @@ function ProjectPage() {
               width="100%"
               height={58}
               objectFit="cover"
-              src="/study/test.jpg"
+              src="/study/magasin.jpg"
               alt="Crombie "
               quality={100}
               placeholder="blur"
-              blurDataURL="/study/test.jpg"
+              blurDataURL="/study/magasin.jpg"
               className="rounded-md"
             />
           </div>
@@ -125,11 +149,8 @@ function ProjectPage() {
             Overview
           </h1>
           <p className="text-[#777] mt-2 text-xs leading-5">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
-            architecto eum aperiam accusantium qui ipsam voluptates, unde
-            voluptatibus temporibus at iure adipisci laudantium illum est
-            expedita cum. Officiis itaque, sunt necessitatibus dolorum saepe
-            commodi, veniam molestiae dignissimos laboriosam vel nemo!
+            Magasin is a <b>Fullstack Responsive E-commerce Web Application</b> made with the <b>MERN</b> stack 👕
+            With 
           </p>
 
           <p className="text-[#777] mt-8 text-xs leading-5">
@@ -151,7 +172,7 @@ function ProjectPage() {
                         {feature.name}
                       </p>
                     </dt>
-                    <dd className="mt-2 ml-16 text-xs text-gray-500">
+                    <dd className="mt-2 ml-16 text-xs leading-5 text-gray-500">
                       {feature.description}
                     </dd>
                   </div>
@@ -195,7 +216,7 @@ function ProjectPage() {
                   layout="fill"
                   placeholder="blur"
                   blurDataURL={img.src}
-                  className="rounded-xl"
+                  className="rounded-xl "
                 />
               </div>
             </SwiperSlide>
@@ -208,7 +229,7 @@ function ProjectPage() {
       </p>
       <div className="flex px-6 space-x-4 items-center ">
         <Link
-          href={"https://github.com/galfrevn/nextjs-crombie-clone"}
+          href={"https://github.com/galfrevn/nextjs-mercadolibre"}
           passHref
         >
           <a
@@ -219,20 +240,20 @@ function ProjectPage() {
             Github repo
           </a>
         </Link>
-        <Link href={"https://vncrombie.netlify.app"} passHref>
+        <Link href={"https://vnmeli.netlify.app"} passHref>
           <a
             target="_blank"
             rel="noreferrer"
-            className="text-[12px] bg-[#f36] font-semibold transitiona-all duration-300 text-white py-3 px-6 "
+            className="text-[12px] bg-[#f4e4da] font-semibold transitiona-all duration-300 text-[#fffff8]  py-3 px-6 "
           >
             Live demo
           </a>
         </Link>
       </div>
 
-      <div className="pt-20 pb-4 ">
+      <footer className="pt-20 pb-4 ">
         <Footer />
-      </div>
+      </footer>
     </>
   );
 }

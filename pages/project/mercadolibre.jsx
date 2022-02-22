@@ -81,7 +81,7 @@ function ProjectPage() {
   return (
     <>
       <Head>
-        <title> Case study (Crombie) | Galfré Valentín Portfolio </title>
+        <title> Case study (Mercado Libre) | Galfré Valentín Portfolio </title>
         <meta name="description" content={`Galfré Valentín portfolio | `} />
         <link rel="icon" href="/logo.ico" />
         <meta name="theme-color" content="#FFF" />
@@ -102,7 +102,7 @@ function ProjectPage() {
         </Link>
 
         <h1 className="text-[#111010] text-[20px] font-bold leading-[1.45] ">
-          Mercadolibre UI Clone
+          Mercadolibre NextJS + TailwindCSS Responsive UI Clone
         </h1>
         <p className="text-[#777] mt-2 text-xs ">Galfré Valentín - ©2022</p>
         <p className="text-[#777] text-xs ">
@@ -185,7 +185,7 @@ function ProjectPage() {
           spaceBetween={30}
           mousewheel={true}
           autoplay={{
-            delay: 2500,
+            delay: 4000,
             disableOnInteraction: false,
           }}
           modules={[Autoplay, Mousewheel]}

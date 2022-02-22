@@ -2,7 +2,7 @@ import Head from "next/head";
 import React from "react";
 import { Footer } from "../components/Footer";
 import { SiLinkedin, SiGithub, SiGmail } from "react-icons/si";
-import { RiInstagramFill } from "react-icons/ri";
+import { RiInstagramFill, RiNewspaperFill } from "react-icons/ri";
 
 const features = [
   {
@@ -15,7 +15,7 @@ const features = [
   },
   {
     name: "Instagram",
-    description: "Know more about my personal life & hobbies",
+    description: "Know more about my personal life & hobbies (I usually upload great pictures)",
     icon: RiInstagramFill,
     bg: "bg-[#ffefea]",
     text: "text-[#f19e82]",
@@ -29,6 +29,14 @@ const features = [
     bg: "bg-[#f3ebff]",
     text: "text-[#B57BFF]",
     link: "https://github.com/galfrevn",
+  },
+  {
+    name: "Curriculum Vitae",
+    description: "Take a look or download my recently updated CV!",
+    icon: RiNewspaperFill,
+    bg: "bg-[#edfceb]",
+    text: "text-[#97cc8d]",
+    link: "https://drive.google.com/file/d/1l2RkoF1klK1843UCs1KGgOppZEcnKfJz/view",
   },
   {
     name: "Email",
@@ -58,7 +66,7 @@ function Contact() {
           Find All the ways to reach me here! 🍻
         </p>
 
-        <div className="mt-6 md:mt-12 mb-12 md:mb-20">
+        <div className="mt-6 md:mt-12 mb-12 md:mb-32">
           <div className="mt-10">
             <dl className="space-y-6 md:space-y-14">
               {features.map((feature) => (
