@@ -31,7 +31,7 @@ const features = [
     link: "https://github.com/galfrevn",
   },
   {
-    name: "Curriculum Vitae",
+    name: "My Resume",
     description: "Take a look or download my recently updated CV!",
     icon: RiNewspaperFill,
     bg: "bg-[#edfceb]",

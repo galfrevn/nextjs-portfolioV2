@@ -19,6 +19,39 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Swiper */
 .swiper-pagination-bullet-active {
-  background-color: rgba(0, 0, 0, .4) !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Custom cursor */
+.cursor {
+  width: 20px;
+  height: 20px;
+  border: #000 solid 1px;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  z-index: 1000;
+}
+
+@keyframes cursorAnim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+    
+  }
+}
+
+a:hover ~ .cursor {
+  background-color: red;
+}
+
+.expand {
+  animation: cursorAnim 0.3s forwards;
 }

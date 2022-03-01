@@ -40,15 +40,15 @@ export const Navbar = ({ name, option1, option2 }) => {
             </h1>
           </a>
         </Link>
-        <div className="flex space-x-8 items-center text-[#111010] font-semibold md:text-xl text-[14px] ">
+        <div className="flex space-x-8 md:space-x-10 items-center text-[#111010] font-semibold md:text-xl text-[14px] ">
           <Link href="/works" passHref>
             <a>
               <p
                 className={`${
                   page === "Works"
-                    ? "text-[#73abff] bg-[#e3efff] px-2 py-1"
+                    ? "text-[#73abff] bg-[#e3efff] md:px-4 md:py-2 px-2 py-1"
                     : ""
-                } `}
+                } transition-all duration-300 `}
               >
                 {option1}
               </p>
@@ -59,9 +59,9 @@ export const Navbar = ({ name, option1, option2 }) => {
               <p
                 className={`${
                   page === "About"
-                    ? "text-[#DC6039] bg-[#FDE1D9] px-2 py-1"
+                    ? "text-[#DC6039] bg-[#FDE1D9] md:px-4 md:py-2 px-2 py-1"
                     : ""
-                } `}
+                } transition-all duration-300`}
               >
                 {option2}
               </p>

@@ -199,7 +199,7 @@ function ProjectPage() {
         >
           {images.map((img, index) => (
             <SwiperSlide key={index}>
-              <div className="w-full md:h-[500px] relative h-80 border-[.5px] rounded-xl">
+              <div className="w-full md:h-[560px] relative h-80 border-[.5px] rounded-xl">
                 <Image
                   src={img.src}
                   alt={`Slide ${index}`}
@@ -242,7 +242,7 @@ function ProjectPage() {
         </div>
       </div>
 
-      <div className="pt-20 pb-4 ">
+      <div className="pt-20 md:pt-40 pb-4 ">
         <Footer />
       </div>
     </>
