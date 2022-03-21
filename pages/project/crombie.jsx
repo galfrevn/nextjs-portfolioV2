@@ -120,7 +120,7 @@ function ProjectPage() {
           <h1 className="text-[#111010] md:text-3xl text-[20px] mt-12 md:mt-24 font-bold leading-[1.45] ">
             Overview
           </h1>
-          <p className="text-[#777] mt-2 text-xs md:text-[16px] md:leading-6 leading-5">
+          <p className="text-[#777] mt-2 text-xs md:text-[16px] md:leading-7 leading-6">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
             architecto eum aperiam accusantium qui ipsam voluptates, unde
             voluptatibus temporibus at iure adipisci laudantium illum est
@@ -152,7 +152,7 @@ function ProjectPage() {
                         {feature.name}
                       </p>
                     </dt>
-                    <dd className="ml-16 md:ml-24 md:w-4/5 md:text-[16px] md:leading-5 text-xs text-[#777] ">
+                    <dd className="ml-16 md:ml-24 md:w-4/5 md:text-[16px] md:leading-7 leading-5 text-xs text-[#777] ">
                       {feature.description}
                     </dd>
                   </div>
@@ -164,7 +164,7 @@ function ProjectPage() {
           <h1 className="text-[#111010] md:text-3xl md:mt-20 text-[20px] mt-12 font-bold leading-[1.45] ">
             Branding
           </h1>
-          <p className="text-[#777] mt-2 md:text-[16px] md:leading-6 leading-5 text-xs ">
+          <p className="text-[#777] mt-2 md:text-[16px] md:leading-7 leading-6 text-xs ">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam
             architecto eum aperiam accusantium qui ipsam voluptates, unde
             voluptatibus temporibus at iure adipisci laudantium illum est
@@ -199,7 +199,7 @@ function ProjectPage() {
         >
           {images.map((img, index) => (
             <SwiperSlide key={index}>
-              <div className="w-full md:h-[560px] relative h-80 border-[.5px] rounded-xl">
+              <div className="w-full md:h-[560px] relative h-80 border-[.5px] rounded-xl cursor-grab">
                 <Image
                   src={img.src}
                   alt={`Slide ${index}`}

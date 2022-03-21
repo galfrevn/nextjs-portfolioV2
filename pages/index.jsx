@@ -1,8 +1,10 @@
 import Head from "next/head";
-import { ProjectCard } from "../components/ProjectCard";
-import { Footer } from "../components/Footer";
-import projects from "../components/data";
 import Link from "next/link";
+
+import { Footer } from "../components/Footer";
+import { ProjectCard } from "../components/ProjectCard";
+
+import projects from "../components/data";
 
 export default function Home() {
   return (
@@ -17,10 +19,10 @@ export default function Home() {
         <meta name="theme-color" content="#FFF" />
       </Head>
 
-      <div className="md:max-w-6xl  md:mx-auto mt-36 md:mt-28 p-6">
+      <div className="md:max-w-6xl md:mx-auto mt-36 md:mt-28 p-6">
         <h1 className="text-[#111010] md:text-6xl text-[28px] font-bold md:leading-[1.45] leading-[1.45] ">
           Welcome to{" "}
-          <span className="text-[#5393fe] cursor-pointer word hover:bg-[#ecf4ff] transition-all duration-300 word" >
+          <span className="text-[#5393fe] cursor-pointer word hover:bg-[#ecf4ff] transition-all duration-300 word">
             Valentin&apos;s Galfré
           </span>{" "}
           <span className="text-[#f19e82] cursor-pointer word hover:bg-[#ffefea] transition-all duration-300">
@@ -40,6 +42,7 @@ export default function Home() {
           </span>
           . <br /> Frontend Developer 💻
         </h1>
+
         <Link href="/contact" passHref>
           <button className="mt-7 py-3.5 px-8 flex md:px-10 md:py-5 md:mt-10 bg-[#5393fe] transition-all duration-300 hover:bg-[#9ec5ff] space-x-2 ">
             <h3 className="text-[14px] md:text-xl font-semibold text-white ">
@@ -65,6 +68,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <footer className="pb-4 ">
         <Footer />
       </footer>
