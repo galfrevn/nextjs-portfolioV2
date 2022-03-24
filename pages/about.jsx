@@ -13,75 +13,76 @@ import {
   SiGithub,
   SiGit,
   SiUnity,
-  SiPython,
   SiAdobephotoshop,
+  SiTypescript,
 } from "react-icons/si";
 import { CgFigma } from "react-icons/cg";
+import { TiArrowDown } from "react-icons/ti";
 
 const skills = [
   {
     icon: SiHtml5,
-    bg: "bg-[#f19e82]",
+    bg: "bg-[#ffd1c3]",
     text: "text-[#fff]",
   },
   {
     icon: SiCss3,
-    bg: "bg-[#5393fe]",
+    bg: "bg-[#C3E9FF]",
     text: "text-[#fff]",
   },
   {
     icon: SiJavascript,
-    bg: "bg-[#f3d686]",
+    bg: "bg-[#FFEFC3]",
     text: "text-[#ffffff]",
   },
   {
+    icon: SiTypescript,
+    bg: "bg-[#C3D8FF]",
+    text: "text-[#fff]",
+  },
+  {
     icon: SiBootstrap,
-    bg: "bg-[#B57BFF]",
+    bg: "bg-[#D1C3FF]",
     text: "text-[#fff]",
   },
   {
     icon: SiTailwindcss,
-    bg: "bg-[#17B1B1]",
+    bg: "bg-[#C3FFEF]",
     text: "text-[#fff]",
   },
   {
     icon: SiReact,
-    bg: "bg-[#9fd4ff]",
+    bg: "bg-[#C3EFFF]",
     text: "text-[#fff]",
   },
   {
     icon: SiNpm,
-    bg: "bg-[#ff3e3e]",
+    bg: "bg-[#FFC6C3]",
     text: "text-[#fff]",
   },
   {
     icon: SiGit,
-    bg: "bg-[#fff6f6]",
-    text: "text-[#ff3e3e]",
+    bg: "bg-[#C3FFDD]",
+    text: "text-[#fff]",
   },
   {
     icon: SiGithub,
-    bg: "bg-[#000]",
+    bg: "bg-[#DBC3FF]",
     text: "text-[#fff]",
   },
   {
     icon: SiUnity,
-    bg: "bg-[#eeeeee]",
-    text: "text-[#000]",
-  },
-  {
-    icon: SiPython,
-    bg: "bg-[#5393fe]",
+    bg: "bg-[#E7E7E7]",
     text: "text-[#fff]",
   },
   {
     icon: SiAdobephotoshop,
-    bg: "bg-[#053c69]",
-    text: "text-[#6bbcff]",
+    bg: "bg-[#C3D0FF]",
+    text: "text-[#fff]",
   },
   {
     icon: CgFigma,
-    bg: "bg-[#B57BFF]",
+    bg: "bg-[#EFC3FF]",
     text: "text-[#fff]",
   },
 ];
@@ -133,7 +134,7 @@ export default function about() {
             Technologies
           </h1>
           <p className="text-[#777] text-xs md:text-[16px] md:mt-2 ">
-            Discover my strengths, hobbies and other stuffs 🔨.
+            I have good knowledge in 🧠
           </p>
 
           <div className="mt-6 md:mt-12">
@@ -155,49 +156,59 @@ export default function about() {
           </div>
 
           <p className="text-[#777] leading-7 text-xs md:text-[16px] mt-10 md:mt-16 ">
-            I consider myself a detailed person with great capacity for analysis
-            and problem solving, capable of working and having good results as a
-            team 🤝🏻. I love languages, I have a high level of English (B2 /
-            C1) and I can start conversations fluently 🍕; I am currently
-            studying French (A2) 🥐 .
+            I recently got my first official job as Frontend Developer 🥳 at  <a target="_blank" rel="noreferrer" className="text-[#5393fe]" href="https://linkedin.com/company/crombie">Crombie</a>.
+            On it, I work every day with a team of developers and designers to bring to life new projects and improve existing ones. 
+            I work with multiple technologies and languages, as <b>ReactJS</b>, <b>TypeScript</b>, <b>React Native</b> and <b>Jest</b>.
           </p>
         </div>
 
         <div className="flex justify-center">
-          <div className="w-full pl-0 md:pl-10 mt-10 md:mt-0 space-y-5 md:space-y-7">
+          <div className="w-full pl-0 md:pl-10 mt-10 md:mt-0">
+            <h1 className="text-[#111010] text-[28px] md:text-5xl font-bold leading-[1.45] ">
+              Who I Am?
+            </h1>
+            <p className="text-[#777] text-xs md:text-[16px] mt-2 ">
+              Another point of view 🐱‍👤
+            </p>
 
-            <div className="border-[1px] border-[#d1d1d1] p-4 rounded-md ">
-              <h1 className="text-[#111010] text-[28px] md:text-3xl font-bold leading-[1.45] ">
-                Lin
-              </h1>
-              <p className="text-[#777] text-xs md:text-[16px] md:mt-2 ">
-                Discover my strengths, hobbies and other stuffs 🔨.
-              </p>
+            <div className="mt-10">
+              <Image
+                layout="responsive"
+                width="100px"
+                height={62}
+                src="https://media2.giphy.com/media/1GEATImIxEXVR79Dhk/giphy.gif?cid=ecf05e47s4eu8pty0v18v0k9g7nqma9vkimiciehm23chuq7&rid=giphy.gif&ct=g"
+                alt="Galfrevn"
+                placeholder="blur"
+                blurDataURL="https://media2.giphy.com/media/1GEATImIxEXVR79Dhk/giphy.gif?cid=ecf05e47s4eu8pty0v18v0k9g7nqma9vkimiciehm23chuq7&rid=giphy.gif&ct=g"
+              />
             </div>
 
-            <div className="border-[1px] border-[#d1d1d1] p-4 rounded-md ">
-              <h1 className="text-[#111010] text-[28px] md:text-3xl font-bold leading-[1.45] ">
-                Lin
-              </h1>
-              <p className="text-[#777] text-xs md:text-[16px] md:mt-2 ">
-                Discover my strengths, hobbies and other stuffs 🔨.
+            <div className="flex items-center mt-10">
+              <p className="text-[#777] leading-7 text-xs md:text-[16px] ">
+                This is me!
               </p>
+              <TiArrowDown className="w-5 h-5 ml-1 text-[#777]" />
             </div>
 
-            <div className="border-[1px] border-[#d1d1d1] p-4 rounded-md ">
-              <h1 className="text-[#111010] text-[28px] md:text-3xl font-bold leading-[1.45] ">
-                Lin
-              </h1>
-              <p className="text-[#777] text-xs md:text-[16px] md:mt-2 ">
-                Discover my strengths, hobbies and other stuffs 🔨.
-              </p>
-            </div>
+            <p className="text-[#777] leading-7 text-xs md:text-[16px]  ">
+              I consider myself a <b>detailed</b> person with great capacity for
+              analysis and <b>problem solving</b>, capable of working and having good
+              results as a team 🤝🏻. I&apos;m a <b>hard worker</b> and I&apos;m always looking for new challenges.
+              <br />
+              <br />
+              Leaving that aside... 
+              I love videogames, photography and music 
+              I have a PS4, and my favorite videogames <b>Resident Evil 4</b> and <b>The Witcher 3</b>. Which ones are yours? 😁
+            </p>
 
+            <p className="text-[#777] leading-7 text-xs md:text-[16px] mt-10">
+              
+            </p>
           </div>
         </div>
       </div>
 
-      <footer className="pb-4 ">
+      <footer className="pb-4 pt-0 md:pt-14">
         <Footer />
       </footer>
     </>

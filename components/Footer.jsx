@@ -3,6 +3,14 @@ import React from "react";
 import { BsLinkedin } from "react-icons/bs";
 
 export const Footer = () => {
+  
+  const handleClick = () => {
+    const lines = document.querySelectorAll(".line")
+    lines.forEach(line => {
+      line.classList.toggle("w-20")
+    });
+  }
+
   return (
     <div className="relative">
       <div className="relative md:h-96 md:max-w-6xl h-[280px] md:mx-auto text-[#111010]">
@@ -15,7 +23,7 @@ export const Footer = () => {
           </p>
           <button text="Get it touch" />
           <Link href="/contact" passHref>
-            <button className="py-2 px-6 flex md:px-8 md:py-3 bg-[#5393fe] transition-all duration-300 hover:bg-[#9ec5ff] space-x-2 ">
+            <button onClick={handleClick} className="py-2 px-6 flex md:px-8 md:py-3 bg-[#5393fe] transition-all duration-300 hover:bg-[#9ec5ff] space-x-2 ">
               <h3 className="text-xs md:text-xl font-semibold text-white ">
                 Hire me
               </h3>
@@ -44,10 +52,10 @@ export const Footer = () => {
         </div>
       </div>
       <div className="absolute right-0 bottom-0 space-y-7">
-        <div className="bg-[#5393fe] md:w-40 w-16 md:h-[71px] h-12 "></div>
-        <div className="bg-[#f19e82] md:w-40 w-16 md:h-[71px] h-12 "></div>
-        <div className="bg-[#B57BFF] md:w-40 w-16 md:h-[71px] h-12 "></div>
-        <div className="bg-[#17B1B1] md:w-40 w-16 md:h-[71px] h-12 "></div>
+        <div className="bg-[#5393fe] transition-all duration-500 md:w-40 w-16 md:h-[71px] h-12 line"></div>
+        <div className="bg-[#f19e82] transition-all duration-500 md:w-40 w-16 md:h-[71px] h-12 line"></div>
+        <div className="bg-[#B57BFF] transition-all duration-500 md:w-40 w-16 md:h-[71px] h-12 line"></div>
+        <div className="bg-[#17B1B1] transition-all duration-500 md:w-40 w-16 md:h-[71px] h-12 line"></div>
       </div>
     </div>
   );
