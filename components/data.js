@@ -9,7 +9,7 @@ const projects = [
         <p>made with NextJS, Tailwind CSS and GraphCMS as Content Manager.📰</p>
       </>
     ),
-    img: "/study/test.jpg",
+    img: "/study/test.webp",
     slug: "/project/crombie",
   },
   {
@@ -24,7 +24,7 @@ const projects = [
         </p>
       </>
     ),
-    img: "/study/meli.jpg",
+    img: "/study/meli.webp",
     slug: "/project/mercadolibre",
   },
   {
@@ -40,7 +40,7 @@ const projects = [
         <p> Google Search Clone 🔎</p>
       </>
     ),
-    img: "/study/google.jpg",
+    img: "/study/google.webp",
     slug: "/project/google-search",
   },
   {
@@ -56,7 +56,7 @@ const projects = [
         <p> Google Search Clone 🔎</p>
       </>
     ),
-    img: "/study/instagram.jpg",
+    img: "/study/instagram.webp",
     slug: "/project/instagram",
   },
   {
@@ -72,7 +72,7 @@ const projects = [
         <p> Google Search Clone 🔎</p>
       </>
     ),
-    img: "/study/magasin.jpg",
+    img: "/study/magasin.webp",
     slug: "/project/magasin",
   },
 ];

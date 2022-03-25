@@ -114,11 +114,10 @@ function ProjectPage() {
               width="100%"
               height={58}
               objectFit="cover"
-              src="/study/meli.jpg"
+              src="/study/meli.webp"
               alt="Mercadolibre"
-              quality={100}
               placeholder="blur"
-              blurDataURL="/study/test.jpg"
+              blurDataURL="/study/meli.webp"
               className="rounded-md"
             />
           </div>

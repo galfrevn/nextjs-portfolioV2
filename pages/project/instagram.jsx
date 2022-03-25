@@ -108,11 +108,10 @@ function ProjectPage() {
               width="100%"
               height={58}
               objectFit="cover"
-              src="/study/instagram.jpg"
+              src="/study/instagram.webp"
               alt="Crombie "
-              quality={100}
               placeholder="blur"
-              blurDataURL="/study/instagram.jpg"
+              blurDataURL="/study/instagram.webp"
               className="rounded-md"
             />
           </div>

@@ -138,11 +138,10 @@ function ProjectPage() {
               width="100%"
               height={58}
               objectFit="cover"
-              src="/study/magasin.jpg"
+              src="/study/magasin.webp"
               alt="Magasin "
-              quality={100}
               placeholder="blur"
-              blurDataURL="/study/test.jpg"
+              blurDataURL="/study/test.wepb"
               className="rounded-md"
             />
           </div>
