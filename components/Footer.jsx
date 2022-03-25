@@ -21,12 +21,12 @@ export const Footer = () => {
           <p className="text-xs md:text-[16px]">
             Whether from scratch or in advanced stages, we can make it happen.
           </p>
-          <button text="Get it touch" />
+          <button aria-label="Get in touch" text="Get in touch" />
           <Link href="/contact" passHref>
             <button onClick={handleClick} className="py-2 px-6 flex md:px-8 md:py-3 bg-[#5393fe] transition-all duration-300 hover:bg-[#9ec5ff] space-x-2 ">
-              <h3 className="text-xs md:text-xl font-semibold text-white ">
+              <p className="text-xs md:text-xl font-semibold text-white ">
                 Hire me
-              </h3>
+              </p>
             </button>
           </Link>
         </div>

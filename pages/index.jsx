@@ -45,9 +45,9 @@ export default function Home() {
 
         <Link href="/contact" passHref>
           <button className="mt-7 py-3.5 px-8 flex md:px-10 md:py-5 md:mt-10 bg-[#5393fe] transition-all duration-300 hover:bg-[#9ec5ff] space-x-2 ">
-            <h3 className="text-[14px] md:text-xl font-semibold text-white ">
+            <p className="text-[14px] md:text-xl font-semibold text-white ">
               Contact me
-            </h3>
+            </p>
           </button>
         </Link>
 
