@@ -14,6 +14,7 @@ module.exports = withPWA({
       "images.prismic.io",
       "upload.wikimedia.org",
       "media2.giphy.com",
+      "media.graphassets.com"
     ],
   },
 });

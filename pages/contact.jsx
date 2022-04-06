@@ -15,7 +15,8 @@ const features = [
   },
   {
     name: "Instagram",
-    description: "Know more about my personal life & hobbies (I usually upload great pictures)",
+    description:
+      "Know more about my personal life & hobbies (I usually upload great pictures)",
     icon: RiInstagramFill,
     bg: "bg-[#ffefea]",
     text: "text-[#f19e82]",
@@ -72,11 +73,14 @@ function Contact() {
               {features.map((feature) => (
                 <div key={feature.name} className="group relative">
                   <dt>
-                    <a href={feature.link} target="_blank" rel="noreferrer"  >
+                    <a href={feature.link} target="_blank" rel="noreferrer">
                       <div
-                        className={`${feature.bg} ${feature.text} absolute flex items-center justify-center h-12 w-12  md:h-20 md:w-20 rounded-md `}
+                        className={`${feature.bg} ${feature.text} absolute hover:-translate-y-1 transition-all duration-200 flex items-center justify-center h-12 w-12  md:h-20 md:w-20 rounded-md `}
                       >
-                        <feature.icon className="h-6 w-6 md:w-10 md:h-10" aria-hidden="true" />
+                        <feature.icon
+                          className="h-6 w-6 md:w-10 md:h-10"
+                          aria-hidden="true"
+                        />
                       </div>
                     </a>
                     <p className="md:pt-4 ml-16 md:ml-24 md:text-xl text-[13px] leading-6 font-bold text-[#111010] ">

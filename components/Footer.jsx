@@ -19,7 +19,7 @@ export const Footer = () => {
             Now that you know me better, let&apos;s work together!
           </h1>
           <p className="text-xs md:text-[16px]">
-            Whether from scratch or in advanced stages, we can make it happen.
+            Whether it&apos;s for small or large projects, I can lend a hand.
           </p>
           <button aria-label="Get in touch" text="Get in touch" />
           <Link href="/contact" passHref>

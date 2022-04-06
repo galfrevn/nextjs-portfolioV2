@@ -6,8 +6,6 @@ import { BsArrowRightShort } from "react-icons/bs";
 import Reveal from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 
-import md from "markdown-it";
-
 const customAnimation = keyframes`
   from {
     opacity: 0;
@@ -20,7 +18,20 @@ const customAnimation = keyframes`
   }
 `;
 
-export const ProjectCard = (project) => {
+const data = [{
+  tag: "React Native",
+  title: "React Native Simple TODO App",
+  description: (
+    <>
+      <p>This is a simple </p>
+      <strong>TODO App</strong>
+      <p>made with Expo in React Native (Still in development) 📱</p>
+    </>
+  ),
+  link: "/project/crombie",
+},]
+
+export const MiniCard = (data) => {
   return (
     <Reveal
       keyframes={customAnimation}
@@ -29,40 +40,29 @@ export const ProjectCard = (project) => {
       duration={500}
       cascade={2}
     >
-      <Link href={`/works/${project.slug}`}>
+      <Link href={`${project.slug}?title=${project.title}`} as={project.slug}>
         <div className="card w-full md:cursor-pointer bg-white md:grid md:grid-cols-2 h-full duration-300 transition-all overflow-hidden group hover:-translate-y-2 border-b-[.5px] md:border-none  ">
-          <Image
-            layout="responsive"
-            width="100%"
-            height={58}
-            quality={65}
-            objectFit="cover"
-            src={project.thumbnail.url}
-            alt={project.title}
-            placeholder="blur"
-            blurDataURL={project.thumbnail.url}
-            className="rounded-md"
-          />
           <div className="pb-10 md:ml-8 md:flex md:h-full md:justify-center md:flex-col pt-6">
             <span
               className={` ${
-                project.tags[0] === "Fullstack"
+                project.tag === "React Native"
                   ? "bg-[#ffefea] text-[#f19e82]"
                   : "bg-[#ecf4ff] text-[#5393fe] "
               } text-xs md:text-[16px] font-semibold md:w-[100px] rounded-md px-2 py-1 md:px-3 md:py-2 `}
             >
-              {project.tags[0]}
+              {project.tag}
             </span>
             <h1 className="text-[#111010] md:text-3xl my-4 text-xl font-bold">
               {project.title}
             </h1>
-            <div
-              className="text-[#777] text-xs md:text-[16px] leading-6 "
-              dangerouslySetInnerHTML={{
-                __html: md().render(project.shortDescription),
-              }}
-            ></div>
-            <Link href={`/works/${project.slug}`} passHref>
+            <div className="text-[#777] text-xs md:text-[16px] leading-6 ">
+              {project.description}
+            </div>
+            <Link
+              href={`${project.link}`}
+              as={project.slug}
+              passHref
+            >
               <a className="group">
                 <div className="flex items-center mt-6 ">
                   <p className="text-[#111010] md:text-sm text-xs font-bold">

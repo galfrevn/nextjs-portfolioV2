@@ -126,8 +126,7 @@ export default function about() {
             can apply my knowledge and at the same time, allow me to develop
             professionally. 👨🏻‍💻 I am an organized, self-taught person with great
             motivation; I am capable of adapting to any circumstance, always
-            giving my best. ✨I <b>love programming and design</b>; I dream of
-            developing as a professional developer. 🎭
+            giving my best. I <b>love programming and design</b> 🎊
           </p>
 
           <h1 className="text-[#111010] text-[28px] md:text-5xl font-bold leading-[1.45] mt-10 md:mt-16 ">
@@ -156,9 +155,19 @@ export default function about() {
           </div>
 
           <p className="text-[#777] leading-7 text-xs md:text-[16px] mt-10 md:mt-16 ">
-            I recently got my first official job as Frontend Developer 🥳 at  <a target="_blank" rel="noreferrer" className="text-[#5393fe]" href="https://linkedin.com/company/crombie">Crombie</a>.
-            On it, I work every day with a team of developers and designers to bring to life new projects and improve existing ones. 
-            I work with multiple technologies and languages, as <b>ReactJS</b>, <b>TypeScript</b>, <b>React Native</b> and <b>Jest</b>.
+            I recently got my first official job as Frontend Developer 🥳 at{" "}
+            <a
+              target="_blank"
+              rel="noreferrer"
+              className="text-[#5393fe]"
+              href="https://linkedin.com/company/crombie"
+            >
+              Crombie
+            </a>
+            . On it, I work every day with a team of developers and designers to
+            bring to life new projects and improve existing ones. I work with
+            multiple technologies and languages, as <b>ReactJS</b>,{" "}
+            <b>TypeScript</b>, <b>React Native</b> and <b>Jest</b>.
           </p>
         </div>
 
@@ -191,19 +200,15 @@ export default function about() {
             </div>
 
             <p className="text-[#777] leading-7 text-xs md:text-[16px]  ">
-              I consider myself a <b>detailed</b> person with great capacity for
-              analysis and <b>problem solving</b>, capable of working and having good
-              results as a team 🤝🏻. I&apos;m a <b>hard worker</b> and I&apos;m always looking for new challenges.
-              <br />
-              <br />
-              Leaving that aside... 
-              I love videogames, photography and music 
-              I have a PS4, and my favorite videogames <b>Resident Evil 4</b> and <b>The Witcher 3</b>. Which ones are yours? 😁
+              Valentín Galfré is a young Argentinian guy who wants to
+              share his creations. He is interested in frontend web development
+              and technology. He realy loves breaking goals, and next one is
+              working as a developer. 😅 He can spend hours and hours listening
+              to clasic rock-pop🎸. He also created some videogames, go play
+              them in Itch.io 🎮.
             </p>
 
-            <p className="text-[#777] leading-7 text-xs md:text-[16px] mt-10">
-              
-            </p>
+            <p className="text-[#777] leading-7 text-xs md:text-[16px] mt-10"></p>
           </div>
         </div>
       </div>
