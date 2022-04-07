@@ -2,9 +2,13 @@ import Head from "next/head";
 import React from "react";
 import { Footer } from "../components/Footer";
 import { ProjectCard } from "../components/ProjectCard";
-import projects from '../components/data'
 
-export default function works() {
+// Apollo Client for GraphQL queries
+import { gql } from "@apollo/client";
+import client from "../apolloClient";
+
+
+export default function works({ projects }) {
   return (
     <>
       <Head>
@@ -31,10 +35,47 @@ export default function works() {
             </div>
           </div>
         </div>
+
+        <div className="mt-20 mb-20 md:mb-40">
+          <p className="text-xs md:text-xs text-center text-[#111010]" >And more coming soon! 😉</p>
+        </div>
+
       </div>
       <footer className="pb-4 ">
         <Footer />
       </footer>
     </>
   );
+}
+
+
+export async function getStaticProps() {
+  const { data } = await client.query({
+    query: gql`
+      query {
+        projectLists {
+          projectSchemas {
+            title
+            shortDescription
+            tags
+            thumbnail {
+              url
+            }
+            slug
+          }
+        }
+      }
+    `,
+    fetchPolicy: "no-cache",
+  });
+
+  const { projectLists } = data;
+  const { projectSchemas } = projectLists[0];
+
+  return {
+    props: {
+      projects: projectSchemas,
+    },
+    revalidate: 60,
+  };
 }

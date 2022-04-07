@@ -5,7 +5,6 @@ import { BsArrowLeftShort } from "react-icons/bs";
 import Link from "next/link";
 import Image from "next/image";
 import { Footer } from "../../components/Footer";
-import { SiNextdotjs, SiReact, SiTailwindcss } from "react-icons/si";
 
 import md from "markdown-it";
 
@@ -18,68 +17,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Autoplay } from "swiper";
 import "swiper/css";
 
-import { Icon } from "react-icons";
-
-const images = [
-  {
-    src: "/study/crombie/a.jpg",
-  },
-  {
-    src: "/study/crombie/b.jpg",
-  },
-  {
-    src: "/study/crombie/c.jpg",
-  },
-  {
-    src: "/study/crombie/d.jpg",
-  },
-  {
-    src: "/study/crombie/e.jpg",
-  },
-  {
-    src: "/study/crombie/f.jpg",
-  },
-  {
-    src: "/study/crombie/g.jpg",
-  },
-  {
-    src: "/study/crombie/h.jpg",
-  },
-  {
-    src: "/study/crombie/i.jpg",
-  },
-];
-
-const features = [
-  {
-    name: "React",
-    description:
-      "Is a library for building composable user interfaces. It encourages the creation of reusable UI components, which present data that changes over time.",
-    icon: SiReact,
-    bg: "bg-[#ecf4ff]",
-    text: "text-[#5393fe]",
-  },
-  {
-    name: "Next.JS",
-    description:
-      "Is a React Based framework with server side rendering capability. It is very fast and SEO friendly. Has an automatic routing and gives a lot of features",
-    icon: SiNextdotjs,
-    bg: "bg-[#ffefea]",
-    text: "text-[#f19e82]",
-  },
-  {
-    name: "TailwindCSS",
-    description:
-      "Is a library for building composable user interfaces. It encourages the creation of reusable UI components, which present data that changes over time.",
-    icon: SiTailwindcss,
-    bg: "bg-[#e1f8f8]",
-    text: "text-[#17B1B1]",
-  },
-];
+import { useRouter } from "next/router";
 
 function ProjectPage({ project }) {
-  console.log(project);
-  console.log(project.technologies[0].icon);
+  const router = useRouter();
+
+  const handleBack = () => {
+    router.back();
+  };
 
   return (
     <>
@@ -91,7 +36,7 @@ function ProjectPage({ project }) {
       </Head>
 
       <div className="md:max-w-6xl md:mx-auto mt-36 px-6 pt-6">
-        <Link href={`/works`} passHref>
+        <button onClick={handleBack}>
           <a className="group">
             <div className="flex items-center mb-6 ">
               <BsArrowLeftShort className="duration-200 md:w-6 md:h-6 group-hover:transform group-hover:-translate-x-2" />
@@ -100,7 +45,7 @@ function ProjectPage({ project }) {
               </p>
             </div>
           </a>
-        </Link>
+        </button>
 
         <h1 className="text-[#111010] text-[20px] md:text-4xl font-bold leading-[1.45] ">
           {project.title}
@@ -167,9 +112,12 @@ function ProjectPage({ project }) {
                       {feature.name}
                     </p>
                   </dt>
-                  <dd className="ml-16 md:ml-24 md:w-4/5 md:text-[16px] md:leading-7 leading-5 text-xs text-[#777] ">
-                    {feature.description}
-                  </dd>
+                  <dd
+                    className="ml-16 md:ml-24 md:w-4/5 md:text-[16px] md:leading-7 leading-5 text-xs text-[#777]"
+                    dangerouslySetInnerHTML={{
+                      __html: md().render(feature.description),
+                    }}
+                  ></dd>
                 </div>
               ))}
             </dl>
@@ -196,6 +144,7 @@ function ProjectPage({ project }) {
           slidesPerView={2}
           spaceBetween={30}
           mousewheel={true}
+          draggable={true}
           autoplay={{
             delay: 4000,
             disableOnInteraction: false,
@@ -232,10 +181,7 @@ function ProjectPage({ project }) {
           Test it by yourself ✨
         </p>
         <div className="flex space-x-4 items-center ">
-          <Link
-            href={"https://github.com/galfrevn/nextjs-crombie-clone"}
-            passHref
-          >
+          <Link href={project.repoLink} passHref>
             <a
               target="_blank"
               rel="noreferrer"
@@ -244,11 +190,12 @@ function ProjectPage({ project }) {
               Github repo
             </a>
           </Link>
-          <Link href={"https://vncrombie.netlify.app"} passHref>
+          <Link href={project.demoLink} passHref>
             <a
               target="_blank"
               rel="noreferrer"
-              className="text-[12px] md:text-[16px] md:py-4 md:px-8 bg-[#f36] font-semibold transitiona-all duration-300 text-white py-3 px-6 "
+              style={{ backgroundColor: project.buttonColor.hex }}
+              className="text-[12px] md:text-[16px] md:py-4 md:px-8 font-semibold transitiona-all duration-300 text-white py-3 px-6 "
             >
               Live demo
             </a>
@@ -319,6 +266,11 @@ export async function getStaticProps({ params }) {
           galeryImages {
             url
           }
+          buttonColor {
+            hex
+          }
+          repoLink
+          demoLink
         }
       }
     `,

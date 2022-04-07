@@ -11,7 +11,7 @@ import md from "markdown-it";
 const customAnimation = keyframes`
   from {
     opacity: 0;
-    transform: translate3d(-30px, 0px, 0);
+    transform: translate3d(0px, 30px, 0);
   }
 
   to {

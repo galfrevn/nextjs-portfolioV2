@@ -15,81 +15,124 @@ import {
   SiUnity,
   SiAdobephotoshop,
   SiTypescript,
+  SiJest,
+  SiNextdotjs,
+  SiSass
 } from "react-icons/si";
 import { CgFigma } from "react-icons/cg";
 import { TiArrowDown } from "react-icons/ti";
 
+import ReactTooltip from 'react-tooltip';
+
 const skills = [
   {
     icon: SiHtml5,
-    bg: "bg-[#ffd1c3]",
+    bg: "bg-[#ffa58a]",
     text: "text-[#fff]",
+    name: "HTML5",
   },
   {
     icon: SiCss3,
-    bg: "bg-[#C3E9FF]",
+    bg: "bg-[#89d4ff]",
     text: "text-[#fff]",
+    name: "CSS",
+  },
+  {
+    icon: SiSass,
+    bg: "bg-[#bf4080]",
+    text: "text-[#fff]",
+    name: "SASS",
   },
   {
     icon: SiJavascript,
-    bg: "bg-[#FFEFC3]",
+    bg: "bg-[#f1da99]",
     text: "text-[#ffffff]",
+    name: "JavaScript",
   },
   {
     icon: SiTypescript,
-    bg: "bg-[#C3D8FF]",
+    bg: "bg-[#80acff]",
     text: "text-[#fff]",
+    name: "TypeScript",
   },
   {
     icon: SiBootstrap,
-    bg: "bg-[#D1C3FF]",
+    bg: "bg-[#a48bf8]",
     text: "text-[#fff]",
+    name: "Bootstrap",
   },
   {
     icon: SiTailwindcss,
-    bg: "bg-[#C3FFEF]",
+    bg: "bg-[#91ebd3]",
     text: "text-[#fff]",
+    name: "TailwindCSS",
   },
   {
     icon: SiReact,
-    bg: "bg-[#C3EFFF]",
+    bg: "bg-[#87d4f0]",
     text: "text-[#fff]",
+    name: "React",
+  },
+  {
+    icon: SiReact,
+    bg: "bg-[#024057]",
+    text: "text-[#fff]",
+    name: "React Native",
+  },
+  {
+    icon: SiNextdotjs,
+    bg: "bg-[#363636]",
+    text: "text-[#ffffff]",
+    name: "Next JS",
+  },
+  {
+    icon: SiJest,
+    bg: "bg-[#961713]",
+    text: "text-[#fff]",
+    name: "Jest",
   },
   {
     icon: SiNpm,
-    bg: "bg-[#FFC6C3]",
+    bg: "bg-[#ff827b]",
     text: "text-[#fff]",
+    name: "NPM",
   },
   {
     icon: SiGit,
-    bg: "bg-[#C3FFDD]",
+    bg: "bg-[#ff7e89]",
     text: "text-[#fff]",
+    name: "Git",
   },
   {
     icon: SiGithub,
-    bg: "bg-[#DBC3FF]",
+    bg: "bg-[#000000]",
     text: "text-[#fff]",
+    name: "Github",
   },
   {
     icon: SiUnity,
     bg: "bg-[#E7E7E7]",
     text: "text-[#fff]",
+    name: "Unity",
   },
   {
     icon: SiAdobephotoshop,
-    bg: "bg-[#C3D0FF]",
+    bg: "bg-[#809bff]",
     text: "text-[#fff]",
+    name: "Adobe Photoshop",
   },
   {
     icon: CgFigma,
-    bg: "bg-[#EFC3FF]",
+    bg: "bg-[#cb7de7]",
     text: "text-[#fff]",
+    name: "Figma",
   },
 ];
 
 export default function about() {
   return (
     <>
+      <ReactTooltip type="dark" />
       <Head>
         <title>About | Galfré Valentín Portfolio </title>
         <meta name="description" content="Galfré Valentín portfolio | Work" />
@@ -103,7 +146,7 @@ export default function about() {
             About
           </h1>
           <p className="text-[#777] text-xs md:text-[16px] md:mt-2 ">
-            Discover my strengths, hobbies and other stuffs 🔨.
+            Discover my strengths, hobbies and other stuffs
           </p>
 
           <p className="text-[#777] leading-7 text-xs md:text-[16px] mt-10 ">
@@ -133,7 +176,7 @@ export default function about() {
             Technologies
           </h1>
           <p className="text-[#777] text-xs md:text-[16px] md:mt-2 ">
-            I have good knowledge in 🧠
+            I have good skills in 🧠
           </p>
 
           <div className="mt-6 md:mt-12">
@@ -141,6 +184,7 @@ export default function about() {
               <div className="grid grid-cols-5 md:grid-cols-3 gap-4 md:gap-10 md:w-3/4 ">
                 {skills.map((skill, index) => (
                   <div
+                    data-tip={skill.name}
                     key={index}
                     className={`${skill.bg} ${skill.text} flex items-center justify-center h-14 w-14 sm:h-20 sm:w-20 md:h-28 md:w-28 rounded-md transition-all duration-200 hover:scale-110 `}
                   >
@@ -176,7 +220,7 @@ export default function about() {
             <h1 className="text-[#111010] text-[28px] md:text-5xl font-bold leading-[1.45] ">
               Who I Am?
             </h1>
-            <p className="text-[#777] text-xs md:text-[16px] mt-2 ">
+            <p className="text-[#777] text-xs md:text-[16px] md:mt-2 ">
               Another point of view 🐱‍👤
             </p>
 
@@ -200,10 +244,10 @@ export default function about() {
             </div>
 
             <p className="text-[#777] leading-7 text-xs md:text-[16px]  ">
-              Valentín Galfré is a young Argentinian guy who wants to
-              share his creations. He is interested in frontend web development
+              Valentín Galfré is a young Argentinian guy who wants to 
+              <b> share his creations</b>. He is interested in frontend web development 
               and technology. He realy loves breaking goals, and next one is
-              working as a developer. 😅 He can spend hours and hours listening
+              <b> working as a developer</b>. 😅 He can spend hours and hours listening
               to clasic rock-pop🎸. He also created some videogames, go play
               them in Itch.io 🎮.
             </p>
