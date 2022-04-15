@@ -14,7 +14,7 @@ import client from "../../apolloClient";
 
 // Swiper Slider
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Mousewheel, Autoplay } from "swiper";
+import { Autoplay } from "swiper";
 import "swiper/css";
 
 import { useRouter } from "next/router";
@@ -143,7 +143,6 @@ function ProjectPage({ project }) {
         <Swiper
           slidesPerView={2}
           spaceBetween={30}
-          mousewheel={true}
           draggable={true}
           autoplay={{
             delay: 4000,
@@ -157,7 +156,7 @@ function ProjectPage({ project }) {
               slidesPerView: 4,
             },
           }}
-          modules={[Autoplay, Mousewheel]}
+          modules={[Autoplay]}
         >
           {project.galeryImages.map((img, index) => (
             <SwiperSlide key={index}>

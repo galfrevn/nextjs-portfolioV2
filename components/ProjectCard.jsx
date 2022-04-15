@@ -31,18 +31,19 @@ export const ProjectCard = (project) => {
     >
       <Link href={`/works/${project.slug}`}>
         <div className="card w-full md:cursor-pointer bg-white md:grid md:grid-cols-2 h-full duration-300 transition-all overflow-hidden group hover:-translate-y-2 border-b-[.5px] md:border-none  ">
-          <Image
-            layout="responsive"
-            width="100%"
-            height={58}
-            quality={65}
-            objectFit="cover"
-            src={project.thumbnail.url}
-            alt={project.title}
-            placeholder="blur"
-            blurDataURL={project.thumbnail.url}
-            className="rounded-md"
-          />
+          <div className="">
+            <Image
+              layout="responsive"
+              width="100%"
+              height={58}
+              objectFit="cover"
+              src={project.thumbnail.url}
+              alt={project.title}
+              placeholder="blur"
+              blurDataURL={project.thumbnail.url}
+              className="rounded-md "
+            />
+          </div>
           <div className="pb-10 md:ml-8 md:flex md:h-full md:justify-center md:flex-col pt-6">
             <span
               className={` ${

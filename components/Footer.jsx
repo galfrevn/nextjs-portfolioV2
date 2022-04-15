@@ -3,13 +3,6 @@ import React from "react";
 import { BsLinkedin } from "react-icons/bs";
 
 export const Footer = () => {
-  
-  const handleClick = () => {
-    const lines = document.querySelectorAll(".line")
-    lines.forEach(line => {
-      line.classList.toggle("w-20")
-    });
-  }
 
   return (
     <div className="relative">
@@ -23,7 +16,7 @@ export const Footer = () => {
           </p>
           <button aria-label="Get in touch" text="Get in touch" />
           <Link href="/contact" passHref>
-            <button onClick={handleClick} className="py-2 px-6 flex md:px-8 md:py-3 bg-[#5393fe] transition-all duration-300 hover:bg-[#9ec5ff] space-x-2 ">
+            <button className="py-2 px-6 flex md:px-8 md:py-3 bg-[#5393fe] transition-all duration-300 hover:bg-[#9ec5ff] space-x-2 ">
               <p className="text-xs md:text-xl font-semibold text-white ">
                 Hire me
               </p>
@@ -51,9 +44,9 @@ export const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="absolute right-0 bottom-0 space-y-7">
+      <div className="absolute right-0 bottom-0 flex flex-col items-end space-y-7">
         <div className="bg-[#5393fe] transition-all duration-500 md:w-40 w-16 md:h-[71px] h-12 line"></div>
-        <div className="bg-[#f19e82] transition-all duration-500 md:w-40 w-16 md:h-[71px] h-12 line"></div>
+        <div className="bg-[#f19e82] transition-all duration-500 md:w-40 w-12 md:h-[71px] h-12 line"></div>
         <div className="bg-[#B57BFF] transition-all duration-500 md:w-40 w-16 md:h-[71px] h-12 line"></div>
         <div className="bg-[#17B1B1] transition-all duration-500 md:w-40 w-16 md:h-[71px] h-12 line"></div>
       </div>

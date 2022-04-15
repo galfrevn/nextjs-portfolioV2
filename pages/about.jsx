@@ -17,12 +17,11 @@ import {
   SiTypescript,
   SiJest,
   SiNextdotjs,
-  SiSass
+  SiSass,
 } from "react-icons/si";
 import { CgFigma } from "react-icons/cg";
-import { TiArrowDown } from "react-icons/ti";
 
-import ReactTooltip from 'react-tooltip';
+import ReactTooltip from "react-tooltip";
 
 const skills = [
   {
@@ -130,6 +129,9 @@ const skills = [
 ];
 
 export default function about() {
+
+  console.log(window.innerWidth)
+
   return (
     <>
       <ReactTooltip type="dark" />
@@ -145,7 +147,7 @@ export default function about() {
           <h1 className="text-[#111010] text-[28px] md:text-5xl font-bold leading-[1.45] ">
             About
           </h1>
-          <p className="text-[#777] text-xs md:text-[16px] md:mt-2 ">
+          <p className="text-[#777] text-xs font-medium md:text-[16px] md:mt-2 ">
             Discover my strengths, hobbies and other stuffs
           </p>
 
@@ -175,8 +177,8 @@ export default function about() {
           <h1 className="text-[#111010] text-[28px] md:text-5xl font-bold leading-[1.45] mt-10 md:mt-16 ">
             Technologies
           </h1>
-          <p className="text-[#777] text-xs md:text-[16px] md:mt-2 ">
-            I have good skills in 🧠
+          <p className="text-[#777] text-xs font-medium md:text-[16px] md:mt-2 ">
+            I have good skills in ...
           </p>
 
           <div className="mt-6 md:mt-12">
@@ -220,36 +222,27 @@ export default function about() {
             <h1 className="text-[#111010] text-[28px] md:text-5xl font-bold leading-[1.45] ">
               Who I Am?
             </h1>
-            <p className="text-[#777] text-xs md:text-[16px] md:mt-2 ">
+            <p className="text-[#777] text-xs font-medium md:text-[16px] md:mt-2 ">
               Another point of view 🐱‍👤
             </p>
 
             <div className="mt-10">
-              <Image
-                layout="responsive"
-                width="100px"
-                height={62}
-                src="https://media2.giphy.com/media/1GEATImIxEXVR79Dhk/giphy.gif?cid=ecf05e47s4eu8pty0v18v0k9g7nqma9vkimiciehm23chuq7&rid=giphy.gif&ct=g"
-                alt="Galfrevn"
-                placeholder="blur"
-                blurDataURL="https://media2.giphy.com/media/1GEATImIxEXVR79Dhk/giphy.gif?cid=ecf05e47s4eu8pty0v18v0k9g7nqma9vkimiciehm23chuq7&rid=giphy.gif&ct=g"
-              />
+              <iframe
+                src="https://my.spline.design/miniroomcopy-12057493e634b13e215b2df1a2d89939/"
+                frameBorder="0"
+                width="100%"
+                height={ window.innerWidth > 768 ? "500px" : "300px" }
+              ></iframe>
             </div>
 
-            <div className="flex items-center mt-10">
-              <p className="text-[#777] leading-7 text-xs md:text-[16px] ">
-                This is me!
-              </p>
-              <TiArrowDown className="w-5 h-5 ml-1 text-[#777]" />
-            </div>
-
-            <p className="text-[#777] leading-7 text-xs md:text-[16px]  ">
-              Valentín Galfré is a young Argentinian guy who wants to 
-              <b> share his creations</b>. He is interested in frontend web development 
-              and technology. He realy loves breaking goals, and next one is
-              <b> working as a developer</b>. 😅 He can spend hours and hours listening
-              to clasic rock-pop🎸. He also created some videogames, go play
-              them in Itch.io 🎮.
+            <p className="text-[#777] mt-10 leading-7 text-xs md:text-[16px]  ">
+              Valentín Galfré is a young Argentinian guy who wants to
+              <b> share his creations</b>. He is interested in frontend web
+              development and technology. He realy loves breaking goals, and
+              next one is
+              <b> working as a developer</b>. 😅 He can spend hours and hours
+              listening to clasic rock-pop🎸. He also created some videogames,
+              go play them in Itch.io 🎮.
             </p>
 
             <p className="text-[#777] leading-7 text-xs md:text-[16px] mt-10"></p>

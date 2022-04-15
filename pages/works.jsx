@@ -23,7 +23,7 @@ export default function works({ projects }) {
           My works
         </h1>
         <p className="text-[#777] text-xs md:text-[16px] md:mt-2 ">
-          Take a look to some of my personal projects 📚!
+          Take a look to some of my personal projects 📚
         </p>
 
         <div className="mt-12 mb-20">
@@ -37,7 +37,7 @@ export default function works({ projects }) {
         </div>
 
         <div className="mt-20 mb-20 md:mb-40">
-          <p className="text-xs md:text-xs text-center text-[#111010]" >And more coming soon! 😉</p>
+          <p className="text-xs md:text-sm  text-center text-[#111010]" >And more coming soon! 😉</p>
         </div>
 
       </div>
